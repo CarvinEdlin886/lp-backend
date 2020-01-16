@@ -1,0 +1,8 @@
+src/caffe/util/io.cpp: In function ‘bool caffe::ReadProtoFromBinaryFile(const char*, google::protobuf::Message*)’:
+src/caffe/util/io.cpp:66:66: warning: ‘void google::protobuf::io::CodedInputStream::SetTotalBytesLimit(int, int)’ is deprecated: Please use the single parameter version of SetTotalBytesLimit(). The second parameter is ignored. [-Wdeprecated-declarations]
+   coded_input->SetTotalBytesLimit(kProtoReadBytesLimit, 536870912);
+                                                                  ^
+In file included from src/caffe/util/io.cpp:9:0:
+/usr/local/include/google/protobuf/io/coded_stream.h:397:8: note: declared here
+   void SetTotalBytesLimit(int total_bytes_limit, int) {
+        ^~~~~~~~~~~~~~~~~~

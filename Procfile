@@ -1,0 +1,1 @@
+web: gunicorn license_plate_backend.wsgi

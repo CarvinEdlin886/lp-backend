@@ -1,0 +1,8 @@
+src/caffe/util/bbox_util.cpp: In instantiation of ‘void caffe::MineHardExamples(const caffe::Blob<Dtype>&, const std::vector<std::map<int, std::vector<caffe::NormalizedBBox> > >&, const std::map<int, std::vector<caffe::NormalizedBBox> >&, const std::vector<caffe::NormalizedBBox>&, const std::vector<std::vector<float> >&, const std::vector<std::map<int, std::vector<float> > >&, const caffe::MultiBoxLossParameter&, int*, int*, std::vector<std::map<int, std::vector<int> > >*, std::vector<std::vector<int> >*) [with Dtype = float]’:
+src/caffe/util/bbox_util.cpp:1043:42:   required from here
+src/caffe/util/bbox_util.cpp:886:14: warning: unused variable ‘is_condition’ [-Wunused-variable]
+   const bool is_condition = multibox_loss_param.is_condition();
+              ^~~~~~~~~~~~
+src/caffe/util/bbox_util.cpp: In instantiation of ‘void caffe::MineHardExamples(const caffe::Blob<Dtype>&, const std::vector<std::map<int, std::vector<caffe::NormalizedBBox> > >&, const std::map<int, std::vector<caffe::NormalizedBBox> >&, const std::vector<caffe::NormalizedBBox>&, const std::vector<std::vector<float> >&, const std::vector<std::map<int, std::vector<float> > >&, const caffe::MultiBoxLossParameter&, int*, int*, std::vector<std::map<int, std::vector<int> > >*, std::vector<std::vector<int> >*) [with Dtype = double]’:
+src/caffe/util/bbox_util.cpp:1053:42:   required from here
+src/caffe/util/bbox_util.cpp:886:14: warning: unused variable ‘is_condition’ [-Wunused-variable]

@@ -291,9 +291,9 @@ def image_detection(model, weights, image_file):
     if ret:
         print('finish process image: {}'.format(img))
 
-    return boundingBoxes
-
     lp_detect(cwd + '/output/', cwd + '/python/alpr_unconstrained_master/data/lp-detector/wpod-trained.h5')
-    ocr(cwd + '/output/')
+    predicted_texts = ocr(cwd + '/output/')
+
+    return boundingBoxes, predicted_texts
 
 

@@ -378,7 +378,7 @@ def ocr(input_dir):
     for i,img_path in enumerate(imgs_paths):
         print("IMG_PATH ", img_path)
         predicted_text, prob = ocr_net.predict(cv2.imread(img_path))
-        filename = img_path.split("/")[7].split(".")[0] + "_ocr.txt"
+        filename = img_path.split("/")[6].split(".")[0] + "_ocr.txt"
 
         filepath = os.path.join(cwd + '/output', filename)
         f = open(filepath, "w")
@@ -386,3 +386,5 @@ def ocr(input_dir):
 
         print('PREDICTED TEXT =', predicted_text)
         print('PROB =', prob)
+
+    return predicted_text

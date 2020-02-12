@@ -6,9 +6,9 @@ from results.serializers import ResultSerializer
 class ResultList(generics.ListCreateAPIView):
     queryset = Result.objects.all()
     serializer_class = ResultSerializer
-    permission_classes = [permissions.IsAuthenticated, IsAdminOrSuperUser]
+    # permission_classes = [permissions.IsAuthenticated, IsAdminOrSuperUser]
 
 class ResultDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Result.objects.all()
     serializer_class = ResultSerializer
-    permission_classes = [permissions.IsAuthenticated, IsAdminOrSuperUser]
+    # permission_classes = [permissions.IsAuthenticated, IsAdminOrSuperUser]

@@ -25,7 +25,7 @@ SECRET_KEY = '5764f2e6f3085bd9649026a2b02317e39804b0b7e29828d8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sleepy-scrubland-57426.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 

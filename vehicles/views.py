@@ -6,9 +6,9 @@ from vehicles.serializers import VehicleSerializer
 class VehicleList(generics.ListCreateAPIView):
     queryset = Vehicle.objects.all()
     serializer_class = VehicleSerializer
-    permission_classes = [permissions.IsAuthenticated, IsAdmin]
+    # permission_classes = [permissions.IsAuthenticated, IsAdmin]
 
 class VehicleDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Vehicle.objects.all()
     serializer_class = VehicleSerializer
-    permission_classes = [permissions.IsAuthenticated, IsAdmin]
+    # permission_classes = [permissions.IsAuthenticated, IsAdmin]
